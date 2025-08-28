@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start; /* don’t force equal heights */
+  justify-content: flex-start; /* align each line to the left */
+  border: 1px dashed #aaa;
+  padding: 10px;
+}
+
+.item {
+  background: #413434;
+  color: #fff; /* readable on dark bg */
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1 1 300px; /* target 300px, can grow/shrink */
+  min-width: 300px; /* never go smaller than 300px */
+  box-sizing: border-box;
+}
+
+.item:nth-child(2) {
+  padding: 40px 20px;
+} /* taller B */
+
+/* Optional: make A get more leftover space than others on its line */
+.row > .item:first-child {
+  flex-grow: 2;
+} /* clearer than re-declaring basis */

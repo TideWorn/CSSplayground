@@ -1,0 +1,7 @@
+.card {
+  width: 300px; /* limit the width */
+  background: #f6f6f6; /* light gray so you see the box */
+  padding: 20px; /* some inside space */
+  border: 1px solid #ddd; /* outline */
+  margin: 20px auto; /* top/bottom = 20px, left/right = auto */
+}

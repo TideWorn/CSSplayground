@@ -1,0 +1,8 @@
+.box {
+  width: 200px; /* content width */
+  height: 80px; /* content height */
+  background: #d9f0ff; /* fill the content area */
+  padding: 80px; /* space INSIDE the box, around the text */
+  border: 6px solid #3a7; /* line around the padding */
+  margin: 20px; /* space OUTSIDE the box, pushing neighbors away */
+}
